@@ -28,7 +28,7 @@ int main()
 	cout << "Enter x: " << endl; cin >> x;
 
 	__asm {
-		fld x            // st(0)=x 
+		fld x           // st(0)=x 
 		fld tn3          // st(0)=-3, st(1)=x  
 		fcomi st, st(1)  // compare x and - 3.0
 		jae case1         // if x < -3.0, goto case1
